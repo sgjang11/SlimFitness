@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*  메인부분  Scroll Back To Top Button 으로 만들기*/
+										/* login */
+/* {width: 400px; height: 40px; font-size: 24px; padding: 5px; border: 2px solid rgb(120, 120, 223);}
+#loginForm input:focus{ box-shadow: 0 0 5px #1670BE;  outline-offset: 0px; outline: none;} */
+                                        /* Info */
+
+.subList{margin-left: 25%; width: 100%; height: 100px;margin-top: 50px;}
+.subList li{float: left; border-bottom: 3px solid gray; width: 200px; height: 70px; margin-left: 200px; font-size: 24px; text-align: center; line-height: 70px; cursor: pointer;}
+.on{background-color: rgba(183, 198, 231, 0.733); border-radius: 10%;}
+.slectedList{width: 100%; height: 300px; background-color: antiquewhite;margin-top: 20px;}
+.slectedList h3{text-align: center;}
+
+
+                                        /* upper, lower */
+.subList2{width: 100%; height: 100px;margin-top: 50px;}
+.subList2 li{float: left; border-bottom: 3px solid gray; width: 200px; height: 70px; margin-left: 200px; font-size: 24px; text-align: center; line-height: 70px; cursor: pointer;}
+.on{background-color: rgba(183, 198, 231, 0.733); border-radius: 10%;}
+.selectedList{width: 100%;background-color: antiquewhite;margin-top: 20px;}
+.selectedList h3{text-align: center;}
+
+.subList3{width: 100%; height: 100px;margin-top: 30px;}
+.subList3 li{float: left; border-bottom: 3px solid gray; width: 100px; height: 70px; margin-left: 200px; font-size: 24px; text-align: center; line-height: 70px; cursor: pointer;}
+.subList3 li:first-child{margin-left: 13%;}
+.sub li:hover{background-color: rgb(163, 228, 228);border-radius: 10%;}
+
