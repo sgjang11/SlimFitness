@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.22.202204280911-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+	</configs>
+	<autoconfigs>
+		<config>src/main/webapp/WEB-INF/config/info-context.xml</config>
+		<config>src/main/webapp/WEB-INF/config/lower-context.xml</config>
+		<config>src/main/webapp/WEB-INF/config/member-context.xml</config>
+		<config>src/main/webapp/WEB-INF/config/root-context.xml</config>
+		<config>src/main/webapp/WEB-INF/config/upper-context.xml</config>
+		<config>src/main/webapp/WEB-INF/config/community-context.xml</config>
+		<config>src/main/webapp/WEB-INF/config/home-context.xml</config>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

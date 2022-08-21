@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://Java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SlimFitness</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+   
+<context-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/root-context.xml</param-value>
+</context-param>
+
+<listener>
+<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+
+<servlet-mapping>
+<servlet-name>homeServlet</servlet-name>
+<url-pattern>/</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>homeServlet</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/home-context.xml</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>infoServlet</servlet-name>
+<url-pattern>/info/*</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>infoServlet</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/info-context.xml</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>communityServlet</servlet-name>
+<url-pattern>/community/*</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>communityServlet</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/community-context.xml</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>upperServlet</servlet-name>
+<url-pattern>/upper/anatomy/*</url-pattern>
+<url-pattern>/upper/exercise/*</url-pattern>
+<url-pattern>/upper/stretching/*</url-pattern>
+<url-pattern>/upper/taping/*</url-pattern>
+<url-pattern>/upper/manager/*</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>upperServlet</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/upper-context.xml</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>lowerServlet</servlet-name>
+<url-pattern>/lower/anatomy/*</url-pattern>
+<url-pattern>/lower/exercise/*</url-pattern>
+<url-pattern>/lower/stretching/*</url-pattern>
+<url-pattern>/lower/taping/*</url-pattern>
+<url-pattern>/lower/manager/*</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>lowerServlet</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/lower-context.xml</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>memberServlet</servlet-name>
+<url-pattern>/member/*</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>memberServlet</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/config/member-context.xml</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+
+</web-app>
