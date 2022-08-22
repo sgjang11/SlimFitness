@@ -33,22 +33,24 @@ public class UpperService implements UpperServiceInter{
 		try {
 		multi=new MultipartRequest(req, save, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		Enumeration files = multi.getFileNames();
-//		String file1,file2,file3,file4=null;
-		String file=null;
-		String filename1,filename2,filename3,filename4=null;
-		file=(String)files.nextElement();
-		filename1=multi.getFilesystemName(file);
-		filename2=multi.getFilesystemName(file);
-		filename3=multi.getFilesystemName(file);
-		filename4=multi.getFilesystemName(file);
+
+		String file1=null;
+		String file2=null;
+		String filename1=null;
+		String filename2=null;
+		file1=(String)files.nextElement();
+		file2=(String)files.nextElement();
+	
+		filename1=multi.getFilesystemName(file1);
+		filename2=multi.getFilesystemName(file2);
+	
 
 		uppervo.setKind(multi.getParameter("kind")); 
 		uppervo.setTitle(multi.getParameter("title")); 
 		uppervo.setContent(multi.getParameter("content")); 
 		uppervo.setFileName1(filename1); 
 		uppervo.setFileName2(filename2); 
-		uppervo.setFileName3(filename3); 
-		uppervo.setFileName4(filename4); 
+	
 		
 		return dao.insert(uppervo);
 		}catch (Exception e) {
@@ -82,8 +84,11 @@ public class UpperService implements UpperServiceInter{
 		totalCount=dao.totalCount();
 		totalPage=(totalCount/countPerPage)+1;
 		if((totalCount%countPerPage)==0) totalPage=(totalCount/countPerPage);
-		if(req.getParameter("currentPage")==null) currentPage=1;
-		else if(!req.getParameter("currentPage").equals("")) currentPage=Integer.parseInt(req.getParameter("currentPage"));
+		if(req.getParameter("currentPage")==null) {
+			currentPage=1;
+		}else if(!req.getParameter("currentPage").equals("")) {
+			currentPage=Integer.parseInt(req.getParameter("currentPage"));
+		}
 		startRow=(currentPage-1)*countPerPage+1;
 		endPage=startRow+countPerPage-1;
 

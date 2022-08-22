@@ -46,10 +46,7 @@ public class UpperController{
 	}
 	@RequestMapping("/backA")
 	public ModelAndView backA(HttpServletRequest req, HttpServletResponse resp) {
-		//service.list()
-//		String[] uris=req.getRequestURI().split("/");
-//		System.out.println("backA 함수 호출 : "+uris[3]);
-		service.pageList(req,resp);
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/backA.jsp");
 		mv.setViewName("index");
 		return mv;

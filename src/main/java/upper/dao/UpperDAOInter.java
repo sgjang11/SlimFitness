@@ -10,8 +10,17 @@ public interface UpperDAOInter {
 
 	public int insert(UpperBoardVO upper);
 
-	public int totalCount();
+	public List<UpperBoardVO> selectAll(UpperBoardVO upper);
+	
+	public UpperBoardVO selectOne(int idx);
 
-	public List<UpperBoardVO> pageList(HttpServletRequest req, int startRow, int endRow, int totalPage, int currentPage,
-			int totalCount); 
+	public UpperBoardVO selectOne(UpperBoardVO upper);
+
+	public List<UpperBoardVO> pageList(HttpServletRequest req, int startRow, int endRow, int totalPage, int currentPage,int totalCount); 
+	
+	public int update(UpperBoardVO upper);
+
+	public int delete(int idx);
+	
+	public int totalCount();
 }
