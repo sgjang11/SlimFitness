@@ -10,8 +10,8 @@ public class MemberController {
 	ModelAndView mv=new ModelAndView();
 	
 	@RequestMapping("/login")
-	public ModelAndView siteInfo() {
-		mv.addObject("page","/member/login.jsp");
+	public ModelAndView login() {
+		mv.addObject("page","/member/loginForm.jsp");
 		mv.setViewName("index");
 		return mv;
 	}

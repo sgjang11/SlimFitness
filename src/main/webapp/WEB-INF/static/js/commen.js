@@ -1,7 +1,6 @@
 /**
  * 
  */
- 
  $(function(){
   $('.navBar>ul>li').mouseover(function(){
     $('.headBott').stop().slideDown();
@@ -32,6 +31,8 @@ function imgTurn(){
     $("#TurnBtn").val("front")
   }
 }
+
+
 window.onscroll = function scrollFunction() {
 		 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 			  document.getElementById("upBtn").style.display = "block";
@@ -46,7 +47,7 @@ function topFunction() {
 }
 
 
-
+ 
 
 
 

@@ -1,5 +1,8 @@
 package upper.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,37 +13,56 @@ import upper.service.UpperServiceInter;
 @Controller
 public class UpperController{
 
-	@Autowired(required = false)
+	@Autowired
 	UpperServiceInter service;
 	ModelAndView mv=new ModelAndView();
 	
+	@RequestMapping("/uploadForm")
+	public ModelAndView uploadForm() {
+		mv.addObject("page","/upper/manager/uploadForm.jsp");
+		mv.setViewName("index");
+		return mv;
+	}
+	
+	@RequestMapping("/uploadFormProc")
+	public String regFormProc(HttpServletRequest req, HttpServletResponse resp) {
+		service.insert(req,resp);
+		return "redirect:/upper/anatomy/backA";
+	}
+	
+	
 							/* anatomy */
 	@RequestMapping("/abdomenA")
-	public ModelAndView abdomenA() {
+	public ModelAndView abdomenA(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/abdomenA.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/armA")
-	public ModelAndView armA() {
+	public ModelAndView armA(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/armA.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/backA")
-	public ModelAndView backA() {
+	public ModelAndView backA(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/backA.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/chestA")
-	public ModelAndView chestA() {
+	public ModelAndView chestA(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/chestA.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/shoulderA")
-	public ModelAndView shoulderA() {
+	public ModelAndView shoulderA(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/shoulderA.jsp");
 		mv.setViewName("index");
 		return mv;

@@ -22,7 +22,7 @@
         easing: 'ease-out-back',
         duration: 1000
     });
- 
+    
 </script> 
 </body>
 </html>

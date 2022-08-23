@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <header>
 	<div class="headTop">
 		<h1><a href="/index" title="메인페이지로 이동"><img src="/img/Logo.png" alt="로고"/></a></h1>
@@ -16,7 +15,7 @@
 			<div class="navRight">
 				<ul>
 					<li>
-						<button type="button" class="login_btn" title="로그인"><i class="fa-solid fa-right-to-bracket"></i></button>
+						<button type="button" class="login_btn" title="로그인" onclick="location.href='/member/login'"><i class="fa-solid fa-right-to-bracket"></i></button>
 					</li>
 					<li>
 						<button type="button" class="sitemap_btn" onclick="openNav()" title="사이트맵"><i class="fa-solid fa-bars"></i></button>
