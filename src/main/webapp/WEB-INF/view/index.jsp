@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="/css/commen.css" />
 <link rel="stylesheet" type="text/css" href="/css/aboutmain.css" />
 <script type="text/javascript" src="/js/commen.js"></script>
+<script type="text/javascript" src="/js/member.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>

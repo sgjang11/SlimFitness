@@ -70,31 +70,36 @@ public class UpperController{
 	
 									/* stretching */
 	@RequestMapping("/abdomenS")
-	public ModelAndView abdomenS() {
+	public ModelAndView abdomenS(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/abdomenS.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/armS")
-	public ModelAndView armS() {
+	public ModelAndView armS(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/armS.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/backS")
-	public ModelAndView backS() {
+	public ModelAndView backS(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/backS.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/chestS")
-	public ModelAndView chestS() {
+	public ModelAndView chestS(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/chestS.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/shoulderS")
-	public ModelAndView shoulderS() {
+	public ModelAndView shoulderS(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/shoulderS.jsp");
 		mv.setViewName("index");
 		return mv;
@@ -102,31 +107,36 @@ public class UpperController{
 	
 									/* exercise */
 	@RequestMapping("/abdomenE")
-	public ModelAndView abdomenE() {
+	public ModelAndView abdomenE(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/abdomenE.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/armE")
-	public ModelAndView armE() {
+	public ModelAndView armE(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/armE.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/backE")
-	public ModelAndView backE() {
+	public ModelAndView backE(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/backE.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/chestE")
-	public ModelAndView chestE() {
+	public ModelAndView chestE(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/chestE.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/shoulderE")
-	public ModelAndView shoulderE() {
+	public ModelAndView shoulderE(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/shoulderE.jsp");
 		mv.setViewName("index");
 		return mv;
@@ -134,31 +144,36 @@ public class UpperController{
 	
 										/* taping */
 	@RequestMapping("/abdomenT")
-	public ModelAndView abdomenT() {
+	public ModelAndView abdomenT(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/abdomenT.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/armT")
-	public ModelAndView armT() {
+	public ModelAndView armT(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/armT.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/backT")
-	public ModelAndView backT() {
+	public ModelAndView backT(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/backT.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/chestT")
-	public ModelAndView chestT() {
+	public ModelAndView chestT(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/chestT.jsp");
 		mv.setViewName("index");
 		return mv;
 	}
 	@RequestMapping("/shoulderT")
-	public ModelAndView shoulderT() {
+	public ModelAndView shoulderT(HttpServletRequest req, HttpServletResponse resp) {
+		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/shoulderT.jsp");
 		mv.setViewName("index");
 		return mv;

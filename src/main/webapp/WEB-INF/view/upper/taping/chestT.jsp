@@ -4,9 +4,9 @@
 	<div class="sub subList2">
 		<ul>
 			<li><a href="/upper/anatomy/backA">Anatomy</a></li>
-			<li class="on"><a href="/upper/stretching/backS">Stretching</a></li>
+			<li><a href="/upper/stretching/backS">Stretching</a></li>
 			<li><a href="/upper/exercise/backE">Exercise</a></li>
-			<li><a href="/upper/taping/backT">Taping</a></li>
+			<li class="on"><a href="/upper/taping/backT">Taping</a></li>
 		</ul>
 	</div>
 	<div class="sub subList3">

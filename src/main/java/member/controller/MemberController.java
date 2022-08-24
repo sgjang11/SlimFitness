@@ -10,8 +10,15 @@ public class MemberController {
 	ModelAndView mv=new ModelAndView();
 	
 	@RequestMapping("/login")
-	public ModelAndView login() {
+	public ModelAndView loginForm() {
 		mv.addObject("page","/member/loginForm.jsp");
+		mv.setViewName("index");
+		return mv;
+	}
+	
+	@RequestMapping("/createmember")
+	public ModelAndView creatememberForm() {
+		mv.addObject("page","/member/creatememberForm.jsp");
 		mv.setViewName("index");
 		return mv;
 	}

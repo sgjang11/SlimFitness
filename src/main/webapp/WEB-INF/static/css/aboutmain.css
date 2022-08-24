@@ -1,14 +1,26 @@
 @charset "UTF-8";
 
-										/* loginForm */
-#loginForm{height: 700px; text-align: center;}
-#formList{margin-top: 200px;}
-#formList h3{font-size: 40px; margin-bottom: 50px;}
-#formList input[type=text], input[type=password]{margin-right: 50px; width: 300px; height: 40px; font-size: 24px; padding-left:8px;border: 2px solid rgb(120, 120, 223);}
-#formList input[type=submit]{font-size: 30px; }
-#formList label{font-size: 24px;}
-#formList input[type=text]:focus, input[type=password]:focus{box-shadow: 0 0 5px #1670BE;  outline-offset: 0px; outline: none;}
-#otherBtn{font-size: 24px; }
+										/* loginForm , createForm*/
+#loginForm{height: 700px; text-align: center;margin-top: 150px;}
+#loginFormList h3{font-size: 40px; margin-bottom: 50px;}
+#loginFormList input[type=text],#loginFormList input[type=password]{width: 350px; height: 40px; font-size: 24px; padding-left:8px;border: 2px solid rgb(120, 120, 223);}
+#loginFormList input[type=text]{margin-right: 70px;}
+#loginFormList input[type=password]{margin-right: 52px;}
+#loginFormList input[type=submit]{font-size: 28px; width: 100px;}
+#loginFormList label{font-size: 24px;}
+#loginFormList input[type=text]:focus, input[type=password]:focus{box-shadow: 0 0 5px #1670BE;  outline-offset: 0px; outline: none;}
+#otherBtn{font-size: 24px; margin-top: 30px;}
+#otherBtn button{font-size: 24px; }
+.psw{font-size: 20px;padding-left: 50px;}
+
+#creatememberForm{height: 700px; text-align: center;margin-top: 150px; }
+
+#creatememberForm h3{font-size: 40px; margin-bottom: 50px;}
+#creatememberForm input[type=text],#creatememberForm input[type=password], #creatememberForm input[type=email]{
+	width: 350px; height: 40px; font-size: 24px; padding-left:8px;border: 2px solid rgb(120, 120, 223);}
+#creatememberForm input[type=text]:focus, input[type=email]:focus{box-shadow: 0 0 5px #1670BE;  outline-offset: 0px; outline: none;}
+#creatememberForm input[type=text]{margin-right: 70px;}
+#creatememberForm input[type=button]{font-size: 28px; width: 100px;}
 
                                         /* Info */
 
@@ -19,15 +31,24 @@
 .slectedList h3{text-align: center;}
 
 
-                                        /* upper, lower */
+                                     /* upper, lower, regForm */
+                            
 .subList2{width: 100%; height: 100px;margin-top: 50px;}
 .subList2 li{float: left; border-bottom: 3px solid gray; width: 200px; height: 70px; margin-left: 200px; font-size: 24px; text-align: center; line-height: 70px; cursor: pointer;}
 .on{background-color: rgba(183, 198, 231, 0.733); border-radius: 10%;}
-.selectedList{width: 100%;background-color: antiquewhite;margin-top: 20px;}
+.selectedList{margin-top: 20px; text-align: center;}
 .selectedList h3{text-align: center;}
-
 .subList3{width: 100%; height: 100px;margin-top: 30px;}
 .subList3 li{float: left; border-bottom: 3px solid gray; width: 100px; height: 70px; margin-left: 200px; font-size: 24px; text-align: center; line-height: 70px; cursor: pointer;}
 .subList3 li:first-child{margin-left: 13%;}
 .sub li:hover{background-color: rgb(163, 228, 228);border-radius: 10%;}
-
+.title{width: 50%; float: left;}
+.writeDay{width: 50%; margin-left: 50%;}
+.content{width: 80%; font-size: 24px; margin-top: 30px; border-top: 4px solid rgb(115, 115, 233);text-align: left;padding-top: 50px;}
+.uploadImg{border-bottom: 1px dashed rgba(40, 117, 117, 0.377); margin-bottom: 50px;}
+.uploadImg img{margin: 70px; border: 3px solid rgba(66, 66, 218, 0.5); border-radius: 15px;}
+.pagelist {margin: 10px;}
+.page-item{padding: 8px 12px;display: inline; font-size: 18px;}
+/* #uploadBtn{position: relative;} */
+#uploadBtn input[type=button]{width: 100px; font-size: 18px; position: absolute; right: 200px;}
+#uploadBtn input[type=button]:hover{cursor: pointer;}

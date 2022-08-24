@@ -25,7 +25,7 @@ public class UpperService implements UpperServiceInter{
 	
 	@Override
 	public int insert(HttpServletRequest req, HttpServletResponse resp) {
-		String save="F:\\JavaProgram\\Project\\work\\SlimFitness\\src\\main\\webapp\\WEB-INF\\static\\file";
+		String save="C:\\Project\\work\\jwork\\SlimFitness\\src\\main\\webapp\\WEB-INF\\static\\file";
 		int fileSize=10*1024*1024;
 		MultipartRequest multi=null;
 		
