@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<main> 
+<main>  
 	<div class="sub subList2">
 		<ul>
 			<li><a href="/lower/anatomy/hipA">Anatomy</a></li>

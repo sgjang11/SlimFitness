@@ -6,7 +6,7 @@ public class MemberVO {
 	private String password;
 	private String email;
 	private String nickname;
-	
+	 
 	public MemberVO() {	}
 	public MemberVO(String id, String password, String email, String nickname) {
 		this.id = id;

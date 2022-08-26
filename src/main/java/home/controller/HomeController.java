@@ -13,5 +13,5 @@ public class HomeController{
 		mv.addObject("page","/home/main.jsp");
 		mv.setViewName("index");
 		return mv;
-	}
+	} 
 }

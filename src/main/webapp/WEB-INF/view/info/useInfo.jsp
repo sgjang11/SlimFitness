@@ -7,7 +7,7 @@
 		<ul>
 			<li><a href="/info/siteInfo">소개글</a></li>
 				<li class="on"><a href="/info/useInfo">이용방법</a></li>
-			</ul>
+			</ul> 
 		</div>
 		<div class="selectedList">
 			<h3>이용방법</h3>

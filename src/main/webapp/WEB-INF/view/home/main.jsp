@@ -7,7 +7,7 @@
 			<div class="searching">
 				<input type="text" name="searching" id="searchBar">
 				<button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-			</div>
+			</div> 
 			<div class="main1">
 				<div class="main1Text">
 					<p>원하는 부위를 클릭하세요.</p>

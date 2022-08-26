@@ -22,7 +22,7 @@ public class UpperService implements UpperServiceInter{
 	UpperDAOInter dao;
 
 	UpperBoardVO uppervo=new UpperBoardVO();
-	
+	 
 	@Override
 	public int insert(HttpServletRequest req, HttpServletResponse resp) {
 		String save="C:\\Project\\work\\jwork\\SlimFitness\\src\\main\\webapp\\WEB-INF\\static\\file";

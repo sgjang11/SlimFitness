@@ -15,7 +15,7 @@ public class CommunityController{
 		mv.addObject("page","/community/announcements.jsp");
 		mv.setViewName("index");
 		return mv;
-	}
+	} 
 	@RequestMapping("/Q&A")
 	public ModelAndView QandA() {
 		mv.addObject("page","/community/Q&A.jsp");

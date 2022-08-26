@@ -2,13 +2,13 @@
     pageEncoding="UTF-8"%>
 <main>
 <div class="container">
-<form action="/upper/manager/uploadFormProc" method="post" enctype="multipart/form-data">
+<form action="/upper/manager/uploadFormProc" method="post" enctype="multipart/form-data" id="uploadForm">
 <h2>등록하기</h2>
 <div class="input-group">
    <div class="input-group-prepend">
       <span class="input-group-text">종류</span>
     </div>
-    <input type="text" class="form-control" id="kind"  name="kind" >
+    <input type="text" class="form-control" id="kind"  name="kind" value="${url}" readonly="readonly">
 </div>
 <div class="input-group">
     <div class="input-group-prepend">

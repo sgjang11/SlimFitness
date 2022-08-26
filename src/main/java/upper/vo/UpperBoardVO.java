@@ -2,7 +2,7 @@ package upper.vo;
 
 import java.util.Date;
 
-
+ 
 public class UpperBoardVO {
 
 //	idx number primary key, 

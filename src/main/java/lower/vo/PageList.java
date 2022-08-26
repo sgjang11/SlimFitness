@@ -3,7 +3,7 @@ package lower.vo;
 import java.util.List;
 
 public class PageList {
-
+ 
 	//전체게시물 수
 	int totalCount;
 	// 페이지당 글의 수

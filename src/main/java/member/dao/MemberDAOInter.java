@@ -11,5 +11,5 @@ public interface MemberDAOInter {
 	public MemberVO selectOne(MemberVO member);
 	public int update(MemberVO member);
 	public int delete(String id);
-	
+	 
 }

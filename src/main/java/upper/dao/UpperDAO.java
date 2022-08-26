@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Repository;
 
 import upper.vo.UpperBoardVO;
-//@Repository
+@Repository
 public class UpperDAO implements UpperDAOInter{
 
 	Connection conn;

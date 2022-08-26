@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class MemberController {
 
 	ModelAndView mv=new ModelAndView();
-	
+	 
 	@RequestMapping("/login")
 	public ModelAndView loginForm() {
 		mv.addObject("page","/member/loginForm.jsp");

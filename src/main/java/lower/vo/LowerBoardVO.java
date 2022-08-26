@@ -3,7 +3,7 @@ package lower.vo;
 import java.util.Date;
 
 public class LowerBoardVO {
-
+ 
 //	kind varchar2(50) not null,
 //	idx number primary key, 
 //	title varchar2(100) not null,

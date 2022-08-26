@@ -10,7 +10,7 @@
 				<li><a href="">이메일 무단 수집거부</a></li>
 			</ul>
 			<address>
-					<span class="nbsp"></span>
+		 			<span class="nbsp"></span>
 					 서울시 중화동 대우능력개발원
 			</address>
 			<div class="copy">Copyright © 2022 </div>

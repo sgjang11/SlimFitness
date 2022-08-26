@@ -20,6 +20,6 @@ public class InfoController {
 		mv.addObject("page","/info/useInfo.jsp");
 		mv.setViewName("index");
 		return mv;
-	}
+	} 
 	
 }

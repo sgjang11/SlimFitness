@@ -14,7 +14,7 @@ public class MemberDAO implements MemberDAOInter{
 	Connection conn;
 	PreparedStatement pstmt;
 	String sql=null;
-	
+	 
 	public MemberDAO() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");

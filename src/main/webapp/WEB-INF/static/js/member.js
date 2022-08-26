@@ -2,8 +2,10 @@
  * 
  */
  
-  var pwconfirm= false; //비밀번호 확인 여부를 확인하는 변수
 
+  var checkid =false;
+  var pwconfirm= false; 
+  var checknick = false;
     function passwordconfirm(){
         var password = document.querySelector("#password");
         var repassword = document.querySelector("#repassword");
@@ -20,7 +22,6 @@
             alert("비밀번호가 일치하지 않습니다.");
             pwconfirm=false;
         }
-
     }
 
     function createmember(){
@@ -47,6 +48,9 @@
         }
             alert("회원가입이 되었습니다.");
             document.forms[0].submit();
-        
-
-    }
+    } 
+    
+  function GoForm(url){
+	location.href="/upper/manager/uploadForm?url="+url;
+}
+   

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <main>
 	<div class="sub subList2">
-		<ul>
+		<ul> 
 			<li class="on"><a href="/lower/anatomy/hipA">Anatomy</a></li>
 			<li><a href="/lower/atretching/hipS">Stretching</a></li>
 			<li><a href="/lower/exercise/hipE">Exercise</a></li>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+ 
 <main>
 <form action="loginProc" method="post" id="loginForm">
   <div id="loginFormList">

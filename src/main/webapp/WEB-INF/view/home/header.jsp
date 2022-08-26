@@ -10,7 +10,7 @@
 				<li><a href="/lower/anatomy/hipA">하체</a></li>
 				<li><a href="/community/announcements">커뮤니티</a></li>
 			</ul>
-		</div>
+		</div> 
 		<div class="headTopRight">
 			<div class="navRight">
 				<ul>

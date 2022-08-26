@@ -15,7 +15,7 @@ public class LowerController{
 	@Autowired(required = false)
 	LowerServiceInter service;
 	ModelAndView mv=new ModelAndView();
-	
+	 
 								/*anatomy*/
 	@RequestMapping("/ankleA")
 	public ModelAndView ankleA() {

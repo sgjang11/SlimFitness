@@ -1,6 +1,7 @@
 /**
  * 
  */
+
  $(function(){
   $('.navBar>ul>li').mouseover(function(){
     $('.headBott').stop().slideDown();
@@ -39,15 +40,13 @@ window.onscroll = function scrollFunction() {
 		  }else {
    			  document.getElementById("upBtn").style.display = "none";
  		 }
-};
+}
 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-
- 
 
 
 
