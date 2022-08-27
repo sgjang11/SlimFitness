@@ -144,7 +144,7 @@ public class UpperDAO implements UpperDAOInter{
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setInt(1, idx);
 			ResultSet rs= pstmt.executeQuery();
-			while(rs.next()) {
+			if(rs.next()) {
 				UpperBoardVO upper=new UpperBoardVO();
 				upper.setIdx(rs.getInt("idx")); // 글번호
 				upper.setKind(rs.getString("kind")); // 글 종류
@@ -167,9 +167,30 @@ public class UpperDAO implements UpperDAOInter{
 
 
 	@Override
-	public UpperBoardVO selectOne(UpperBoardVO upper) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<UpperBoardVO> search(String search) {
+		try {
+			sql="select * from upperboard where title like '%"+search+"%'";
+			pstmt=conn.prepareStatement(sql);
+			ResultSet rs=pstmt.executeQuery();
+			List<UpperBoardVO> list=new ArrayList<UpperBoardVO>();
+			while(rs.next()) {
+				UpperBoardVO upper=new UpperBoardVO();
+				upper.setIdx(rs.getInt("idx")); // 글번호
+				upper.setKind(rs.getString("kind")); // 글 종류
+				upper.setTitle(rs.getString("title")); // 제목
+				upper.setContent(rs.getString("content")); // 내용
+				upper.setWriteDay(rs.getDate("writeDay"));  // 작성일
+				upper.setFileName1(rs.getString("fileName1")); // 파일 
+				upper.setFileName2(rs.getString("fileName2")); // 파일 
+				upper.setIsdel(rs.getInt("isdel")); // 삭제 되었는지 확인 (0 또는 1)
+				list.add(upper);
+			}
+			return list;
+			}catch(Exception e) {
+				System.out.println("find 오류");
+				e.printStackTrace();
+				return null;
+			}
 	}
 
 
@@ -184,7 +205,8 @@ public class UpperDAO implements UpperDAOInter{
 			pstmt.setString(4, upper.getFileName1());
 			pstmt.setString(5, upper.getFileName2());
 			pstmt.setInt(6, upper.getIdx());
-			return pstmt.executeUpdate();
+			int rs=pstmt.executeUpdate();
+			return rs;
 		}catch (Exception e) {
 			System.out.println("update 오류");
 			e.printStackTrace();
@@ -200,7 +222,8 @@ public class UpperDAO implements UpperDAOInter{
 			sql="update upperboard set isdel=1 where idx=?";
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setInt(1, idx);
-			return pstmt.executeUpdate();
+			int rs=pstmt.executeUpdate();
+			return rs;
 		}catch (Exception e) {
 			System.out.println("delete(isdel update) 오류");
 			e.printStackTrace();

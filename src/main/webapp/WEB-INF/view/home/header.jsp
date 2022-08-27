@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header>
 	<div class="headTop">
 		<h1><a href="/index" title="메인페이지로 이동"><img src="/img/Logo.png" alt="로고"/></a></h1>
@@ -15,9 +15,17 @@
 		<div class="headTopRight">
 			<div class="navRight">
 				<ul>
+				<c:if test="${not empty id and id ne 'loginFail'}">
 					<li>
-						<button type="button" class="login_btn" title="로그인"><i class="fa-solid fa-right-to-bracket"></i></button>
+						<span id="getId">[${id}]님</span>
+						<button type="button" class="login_btn" title="로그인" onclick="location.href='/member/logout'"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
 					</li>
+				</c:if>
+				<c:if test="${empty id}">
+					<li>
+						<button type="button" class="login_btn" title="로그인" onclick="location.href='/member/login'"><i class="fa-solid fa-right-to-bracket"></i></button>
+					</li>
+				</c:if>
 					<li>
 						<button type="button" class="sitemap_btn" onclick="openNav()" title="사이트맵"><i class="fa-solid fa-bars"></i></button>
 					</li>

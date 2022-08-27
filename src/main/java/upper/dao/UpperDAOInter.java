@@ -14,7 +14,7 @@ public interface UpperDAOInter {
 	
 	public UpperBoardVO selectOne(int idx);
 
-	public UpperBoardVO selectOne(UpperBoardVO upper);
+	public List<UpperBoardVO> search(String search);
 
 	public List<UpperBoardVO> pageList(HttpServletRequest req, int startRow, int endRow, int totalPage, int currentPage,int totalCount); 
 	

@@ -17,20 +17,23 @@ button{cursor:pointer; cursor:hand;background: transparent;border: 0;outline:0;}
 header{width: 100%; position: fixed;z-index: 1;}
 .headTop>h1>a>img{width: 50px; height: 50px; float: left;}
 .headTop{width: 100%;height: 25%; display: flex; justify-content: space-between; 
-    align-items: center; padding: 8px 12px; background-color: aliceblue;border-bottom: 2px dashed rgba(11, 142, 248, 0.432); }
-.navBar{width: 88%; height: 100px; float: left;}
+    align-items: center; padding: 8px 12px; background-color: aliceblue;
+    /*border-bottom: 2px dashed rgba(11, 142, 248, 0.432);*/ 
+    }
+.navBar{width: 85%; height: 100px; float: left;}
 .navBar li{float: left; width: 20%; text-align: center; font-size: 24px; padding-top: 30px; padding-bottom: 20px;}
 .navBar li:first-child{margin-left: 200px;}
 .navBar li:hover{border-bottom: 3px solid skyblue;}
-.headTopRight{width: 9.3%; height: 100px; float: left; }
+.headTopRight{width: 12.3%; height: 100px; float: left;}
 .navRight li{float: left; font-size: 20px; padding-top: 30px;}
 .login_btn{width: 30px; height: 30px; padding-top: 10px; }
 .login_btn i{font-size: 25px;}
 .sitemap_btn{width: 30px; height: 30px; padding-top: 10px; margin-left: 30px;}
 .sitemap_btn i{font-size: 25px;}
+#getId{font-size: 22px;padding-right: 10px;}
 
                                             /* 하단메뉴 */
-.headBott{width: 70%; height: 170px;  justify-content: space-between; 
+.headBott{width: 70%; height: 70%;  justify-content: space-between; 
     align-items: center; display: none;margin-left: 250px;}
 .navList {width: 100%; height: 100%; background-color: rgba(240, 248, 255, 0.959); }
 .navList ul{float: left; width: 25%; height: 100%;}
@@ -50,7 +53,6 @@ header{width: 100%; position: fixed;z-index: 1;}
 .list li:hover{border-bottom: 2px solid gray; border-radius: 10%;}
 .list:first-child{margin-left: 100px; border-left: none;}
 .list li:first-child{margin-top: 20px;}
-
 
                                          /* main common */
 main{width: 100%; padding-top: 100px; background-color: rgb(238, 241, 241);padding-top: 120px;}
@@ -80,9 +82,8 @@ main{width: 100%; padding-top: 100px; background-color: rgb(238, 241, 241);paddi
 
 										/* main2,3 */
 .mainImg{float: left;}
-.mainImg img{border:1px solid gray; width: 700px; height: 400px; margin: 100px 0px 0px 100px;}
-.mainImg img{border:1px solid gray; width: 700px; height: 400px; margin: 100px 0px 0px 100px;}
-.mainSlideText{float: left; width: 900px; height: 400px; margin: 100px 0px 0px 100px; text-align:center; background-color: #90b8db; font-size: 20px;}
+.mainImg img{border:1px solid gray; width: 700px; height: 400px; margin-top: 50px; margin-left: 100px;}
+.mainSlideText{float: left; width: 900px; height: 400px; margin-top: 50px; margin-left: 100px; text-align:center; background-color: #90b8db; font-size: 20px;}
 .mainSlideText li{text-align: left; padding: 8px 12px;}
 
 										/* main2 */
@@ -90,6 +91,10 @@ main{width: 100%; padding-top: 100px; background-color: rgb(238, 241, 241);paddi
 										
 										/* main3 */
 
+
+
+                                        /* footer */
+footer{width: 100%; height: 150px;background:#252525;text-align:center;padding: 10px; font-size: 14px;}
 
 @media(max-width:1850px) {
     .list{width: 20%; font-size: 20px;}
@@ -102,15 +107,11 @@ main{width: 100%; padding-top: 100px; background-color: rgb(238, 241, 241);paddi
     .mainSlideText{width: 700px; height: 400px; margin: 100px 0px 0px 80px; font-size: 16px;}
 }
 @media(max-width:1200px) {
+    .navBar a{display: none;}
     .list{width: 18%; font-size: 20px;}
 }
 @media(max-width:800px) {
     .list{margin-left: 0px; width: 100%; font-size: 20px; float: none; border-left: none; border-bottom: 2px dashed rgba(92, 94, 91, 0.432);}
     .list:first-child{padding-left: 120px; margin-left: 0px;}
     .list li:first-child{margin-top: 0px;}
-    /* .mainImg img{width: 500px; height: 400px; margin: 100px 0px 0px 80px;} */
 }
-                                        /* footer */
-footer{width: 100%; height: 150px;background:#252525;text-align:center;padding: 10px; font-size: 14px;}
-
-

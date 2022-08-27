@@ -9,7 +9,6 @@ import upper.vo.PageList;
 public interface UpperServiceInter{
 
 	public int insert(HttpServletRequest req, HttpServletResponse resp);
-
 	public PageList pageList(HttpServletRequest req, HttpServletResponse resp);
 
 }

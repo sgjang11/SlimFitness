@@ -18,7 +18,8 @@ public class UpperController{
 	ModelAndView mv=new ModelAndView();
 	
 	@RequestMapping("/uploadForm")
-	public ModelAndView uploadForm() {
+	public ModelAndView uploadForm(String url) {
+		mv.addObject("url",url);
 		mv.addObject("page","/upper/manager/uploadForm.jsp");
 		mv.setViewName("index");
 		return mv;
@@ -48,6 +49,8 @@ public class UpperController{
 	}
 	@RequestMapping("/backA")
 	public ModelAndView backA(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/backA.jsp");
 		mv.setViewName("index");
@@ -55,6 +58,8 @@ public class UpperController{
 	}
 	@RequestMapping("/chestA")
 	public ModelAndView chestA(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/chestA.jsp");
 		mv.setViewName("index");
@@ -62,6 +67,8 @@ public class UpperController{
 	}
 	@RequestMapping("/shoulderA")
 	public ModelAndView shoulderA(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/anatomy/shoulderA.jsp");
 		mv.setViewName("index");
@@ -71,6 +78,8 @@ public class UpperController{
 									/* stretching */
 	@RequestMapping("/abdomenS")
 	public ModelAndView abdomenS(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/abdomenS.jsp");
 		mv.setViewName("index");
@@ -78,6 +87,8 @@ public class UpperController{
 	}
 	@RequestMapping("/armS")
 	public ModelAndView armS(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/armS.jsp");
 		mv.setViewName("index");
@@ -85,6 +96,8 @@ public class UpperController{
 	}
 	@RequestMapping("/backS")
 	public ModelAndView backS(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/backS.jsp");
 		mv.setViewName("index");
@@ -92,6 +105,8 @@ public class UpperController{
 	}
 	@RequestMapping("/chestS")
 	public ModelAndView chestS(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/chestS.jsp");
 		mv.setViewName("index");
@@ -99,6 +114,8 @@ public class UpperController{
 	}
 	@RequestMapping("/shoulderS")
 	public ModelAndView shoulderS(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/stretching/shoulderS.jsp");
 		mv.setViewName("index");
@@ -108,6 +125,8 @@ public class UpperController{
 									/* exercise */
 	@RequestMapping("/abdomenE")
 	public ModelAndView abdomenE(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/abdomenE.jsp");
 		mv.setViewName("index");
@@ -115,6 +134,8 @@ public class UpperController{
 	}
 	@RequestMapping("/armE")
 	public ModelAndView armE(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/armE.jsp");
 		mv.setViewName("index");
@@ -122,6 +143,8 @@ public class UpperController{
 	}
 	@RequestMapping("/backE")
 	public ModelAndView backE(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/backE.jsp");
 		mv.setViewName("index");
@@ -129,6 +152,8 @@ public class UpperController{
 	}
 	@RequestMapping("/chestE")
 	public ModelAndView chestE(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/chestE.jsp");
 		mv.setViewName("index");
@@ -136,6 +161,8 @@ public class UpperController{
 	}
 	@RequestMapping("/shoulderE")
 	public ModelAndView shoulderE(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/exercise/shoulderE.jsp");
 		mv.setViewName("index");
@@ -145,6 +172,8 @@ public class UpperController{
 										/* taping */
 	@RequestMapping("/abdomenT")
 	public ModelAndView abdomenT(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/abdomenT.jsp");
 		mv.setViewName("index");
@@ -152,6 +181,8 @@ public class UpperController{
 	}
 	@RequestMapping("/armT")
 	public ModelAndView armT(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/armT.jsp");
 		mv.setViewName("index");
@@ -159,6 +190,8 @@ public class UpperController{
 	}
 	@RequestMapping("/backT")
 	public ModelAndView backT(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/backT.jsp");
 		mv.setViewName("index");
@@ -166,6 +199,8 @@ public class UpperController{
 	}
 	@RequestMapping("/chestT")
 	public ModelAndView chestT(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/chestT.jsp");
 		mv.setViewName("index");
@@ -173,6 +208,8 @@ public class UpperController{
 	}
 	@RequestMapping("/shoulderT")
 	public ModelAndView shoulderT(HttpServletRequest req, HttpServletResponse resp) {
+		String[] uris=req.getRequestURI().split("/");
+		mv.addObject("url",uris[3]);
 		mv.addObject("pagelist", service.pageList(req,resp));
 		mv.addObject("page","/upper/taping/shoulderT.jsp");
 		mv.setViewName("index");

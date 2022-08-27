@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>    
 <main>
+<input type="button" onclick="topFunction()" id="upBtn" title="Go to top" value="TOP">
 	<div class="sub subList2">
 		<ul>
 			<li class="on"><a href="/upper/anatomy/backA">Anatomy</a></li>
@@ -23,8 +24,8 @@
 		<input type="text" name="searching" id="searchBar">
 		<button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
 	</div>
-	<div id="uploadBtn">
-	<input type="button" value="등록" onclick="location.href='/upper/manager/uploadForm'">
+	<div id="upload">
+	<input type="button" value="등록" id="uploadBtn" onclick="GoForm('${url}')">
 	</div>
 	<div class="selectedList">
 		<c:forEach var="upper" items="${pagelist.list}">

@@ -18,7 +18,7 @@ import upper.vo.UpperBoardVO;
 
 @Service
 public class UpperService implements UpperServiceInter{
-// uris[3]를 보내보자...
+
 	@Autowired
 	UpperDAOInter dao;
 

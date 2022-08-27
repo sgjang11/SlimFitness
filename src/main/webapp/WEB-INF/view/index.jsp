@@ -10,11 +10,11 @@
 <link rel="stylesheet" type="text/css" href="/css/commen.css" />
 <link rel="stylesheet" type="text/css" href="/css/aboutmain.css" />
 <script type="text/javascript" src="/js/commen.js"></script>
+<script type="text/javascript" src="/js/process.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
-<body>
+<body> 
 <jsp:include page="/WEB-INF/view/home/header.jsp"></jsp:include>
 <jsp:include page="/WEB-INF/view${page}"></jsp:include>
 <jsp:include page="/WEB-INF/view/home/footer.jsp"></jsp:include>
@@ -23,7 +23,7 @@
         easing: 'ease-out-back',
         duration: 1000
     });
- 
+    
 </script> 
 </body>
 </html>
