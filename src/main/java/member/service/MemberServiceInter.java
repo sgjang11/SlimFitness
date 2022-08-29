@@ -10,5 +10,4 @@ public interface MemberServiceInter {
 
 	public boolean login(HttpServletRequest req, HttpServletResponse resp);
 
-	public void logout(HttpServletRequest req);
 }

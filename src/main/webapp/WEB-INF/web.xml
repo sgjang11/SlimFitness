@@ -51,6 +51,7 @@
 <servlet-mapping>
 <servlet-name>communityServlet</servlet-name>
 <url-pattern>/community/*</url-pattern>
+<url-pattern>/community/board/*</url-pattern>
 </servlet-mapping>
 <servlet>
 <servlet-name>communityServlet</servlet-name>

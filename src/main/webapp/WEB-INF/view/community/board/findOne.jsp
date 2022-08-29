@@ -6,7 +6,7 @@
 			<li><a href="/community/announcements">공지사항</a></li>
 			<li><a href="/community/Q&A">Q&A</a></li>
 			<li><a href="/community/liveChat">실시간 채팅</a></li>
-			<li class="on"><a href="/community/freeBoard">자유게시판</a></li>
+			<li class="on"><a href="/community/board/freeBoard">자유게시판</a></li>
 			</ul>
 		</div>
 		

@@ -63,7 +63,7 @@
 					<li><a href="/community/announcements">공지사항</a></li>
 					<li><a href="/community/Q&A">Q&A</a></li>
 					<li><a href="/community/liveChat">실시간채팅</a></li>
-					<li><a href="/community/freeBoard">자유게시판</a></li>
+					<li><a href="/community/board/freeBoard">자유게시판</a></li>
 				</ul>		
 			</div>
 		</div> 
@@ -106,7 +106,7 @@
 					<li><a href="/community/announcements">공지사항</a></li>
 					<li><a href="/community/Q&A">Q&A</a></li>
 					<li><a href="/community/liveChat">실시간채팅</a></li>
-					<li><a href="/community/freeBoard">자유게시판</a></li>
+					<li><a href="/community/board/freeBoard">자유게시판</a></li>
 				</ul>
 			</div>
 		</div>

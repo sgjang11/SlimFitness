@@ -29,21 +29,19 @@ public class MemberController {
 	public ModelAndView loginProc(HttpServletRequest req, HttpServletResponse resp) {
 		boolean result=service.login(req,resp);
 		if(result==true) {
-			mv.addObject("id",req.getAttribute("id"));
-			mv.addObject("page","/home/main.jsp");
+			mv.addObject("id",req.getSession().getAttribute("id"));
+			mv=new ModelAndView("redirect:/index");
 		}else {
 			mv.addObject("id", "loginFail");
-			mv.addObject("page","/member/loginForm.jsp");
+			mv=new ModelAndView("redirect:/member/login");
 		}
-		mv.setViewName("index");
 		return mv;
 	}
 	
 	@RequestMapping("/logout")
 	public ModelAndView logout(HttpServletRequest req) {
-		service.logout(req);
-		mv.addObject("page","/member/loginForm.jsp");
-		mv.setViewName("index");
+		req.getSession().invalidate();
+		mv=new ModelAndView("redirect:/member/login");
 		return mv;
 	}
 	@RequestMapping("/createmember")
@@ -55,8 +53,7 @@ public class MemberController {
 	@RequestMapping("/creatememberProc")
 	public ModelAndView creatememberProc(MemberVO member) {
 		service.insert(member);
-		mv.addObject("page","/member/loginForm.jsp");
-		mv.setViewName("index");
+		mv=new ModelAndView("redirect:/member/login");
 		return mv;
 	}
 	

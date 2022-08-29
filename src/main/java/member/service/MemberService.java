@@ -26,10 +26,6 @@ public class MemberService implements MemberServiceInter{
 		return result;
 	}
 	
-	@Override
-	public void logout(HttpServletRequest req) {
-		req.getSession().invalidate();
-	}
 	
 	@Override
 	public int insert(MemberVO member) {
