@@ -3,6 +3,7 @@ package member.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -48,11 +49,40 @@ public class MemberDAO implements MemberDAOInter{
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public boolean login(String id, String password) {
+		try {
+			sql="select * from member where id=? and password=?";
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, password);
+			ResultSet result=pstmt.executeQuery();
+			if(result.next()) {
+				return true;
+			}else {
+				return false;
+			}
+		}catch (Exception e) {
+			System.out.println("member insert 오류");
+			e.printStackTrace();
+			return false;
+		}
+	}
 
 	@Override
-	public MemberVO selectOne(MemberVO member) {
-		// TODO Auto-generated method stub
-		return null;
+	public int checkID(String id) {
+		try {
+			sql="select id from member where id=?";
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			int result=pstmt.executeUpdate();
+			return result;
+		}catch (Exception e) {
+			System.out.println("member insert 오류");
+			e.printStackTrace();
+			return 0;
+		}
 	}
 
 	@Override
@@ -66,6 +96,8 @@ public class MemberDAO implements MemberDAOInter{
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	
 
 	
 }

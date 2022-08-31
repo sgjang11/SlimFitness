@@ -14,11 +14,9 @@ import org.springframework.stereotype.Repository;
 import upper.vo.UpperBoardVO;
 @Repository
 public class UpperDAO implements UpperDAOInter{
-
 	Connection conn;
 	PreparedStatement pstmt;
 	String sql=null;
-	
 	
 	public UpperDAO() {
 		try {
@@ -30,8 +28,6 @@ public class UpperDAO implements UpperDAOInter{
 		}
 		
 	}
-	
-	
 	@Override
 	public int insert(UpperBoardVO upper) {
 		try {
